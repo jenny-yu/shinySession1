@@ -22,7 +22,8 @@ ui <- fluidPage(
                   "Number of bins:",
                   min = 1,
                   max = 50,
-                  value = 30)
+                  value = 30, 
+                  width="300px")
     ),
     
     # Show a plot of the generated distribution
@@ -41,7 +42,8 @@ server <- function(input, output) {
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'blue', border = 'white')
+    hist(x, breaks = bins, col = 'blue', border = 'white',
+         title="Histgram of time", xlab="x value - waiting time")
   })
 }
 
