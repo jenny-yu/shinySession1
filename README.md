@@ -1,3 +1,3 @@
 # shinySession1
-changed width of slider input
-changed style of histogram
+changed width of slider input;
+changed style of histogram.
